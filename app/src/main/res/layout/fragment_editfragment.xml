@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/black"
+    tools:context=".ui.Fragments.Editfragment">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:orientation="vertical"
+        android:layout_height="wrap_content">
+
+        <EditText
+            android:id="@+id/te_title"
+            android:layout_width="370dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="100dp"
+            android:gravity = "center"
+            android:layout_gravity="center"
+            android:background="#D3CFCF"
+            android:hint="Title"
+            android:maxLines="1"
+            android:padding="15dp"
+            android:textColorHint="#6C6869" />
+
+        <EditText
+            android:id="@+id/sub_title_edit"
+            android:layout_width="350dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="17dp"
+            android:background="#D3CFCF"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:maxLines="1"
+            android:hint="Sub-Title"
+            android:padding="15dp"
+            android:textColorHint="#6C6869" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_margin="10dp">
+
+            <ImageView
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:id="@+id/pri_red_edit"
+                android:layout_marginStart="20dp"
+
+                android:background="@drawable/circular_img1"/>
+
+            <ImageView
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:layout_marginStart="20dp"
+                android:id="@+id/pri_gren_edot"
+                android:background="@drawable/circular_img3"/>
+
+            <ImageView
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:layout_marginStart="20dp"
+                android:id="@+id/pri_ylo_edit"
+                android:background="@drawable/circular_img2"/>
+
+
+        </LinearLayout>
+
+        <EditText
+            android:layout_width="350dp"
+            android:layout_height="300dp"
+            android:layout_marginTop="12dp"
+            android:id="@+id/notes_edit"
+            android:layout_margin="7dp"
+            android:layout_gravity="center"
+            android:background="#B5A7A7"
+            android:hint="Notes"
+            android:gravity="center"
+            android:padding="15dp"
+            android:textColorHint="#FFFFFF" />
+
+    </LinearLayout>
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/edit_float_done"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="590dp"
+        android:layout_marginStart="300dp"
+        android:backgroundTint="#FF3535"
+        android:src="@drawable/done_24"/>
+
+</FrameLayout>

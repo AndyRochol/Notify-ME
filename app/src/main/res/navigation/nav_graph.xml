@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/homefragment2">
+
+    <fragment
+        android:id="@+id/createfragment2"
+        android:name="com.example.my_quotes.ui.Fragments.Createfragment"
+        android:label="fragment_createfragment"
+        tools:layout="@layout/fragment_createfragment" >
+        <action
+            android:id="@+id/action_createfragment2_to_homefragment2"
+            app:destination="@id/homefragment2" />
+    </fragment>
+    <fragment
+        android:id="@+id/editfragment2"
+        android:name="com.example.my_quotes.ui.Fragments.Editfragment"
+        android:label="fragment_editfragment"
+        tools:layout="@layout/fragment_editfragment" >
+        <action
+            android:id="@+id/action_editfragment2_to_homefragment2"
+            app:destination="@id/homefragment2" />
+        <argument
+            android:name="sharing_notes"
+            app:argType="com.example.my_quotes.Model.Notes" />
+    </fragment>
+    <fragment
+        android:id="@+id/homefragment2"
+        android:name="com.example.my_quotes.ui.Fragments.Homefragment"
+        android:label="fragment_homefragment"
+        tools:layout="@layout/fragment_homefragment" >
+        <action
+            android:id="@+id/action_homefragment2_to_createfragment2"
+            app:destination="@id/createfragment2" />
+        <action
+            android:id="@+id/action_homefragment2_to_editfragment2"
+            app:destination="@id/editfragment2" />
+    </fragment>
+</navigation>
